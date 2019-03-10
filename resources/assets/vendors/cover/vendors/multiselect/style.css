@@ -1,0 +1,204 @@
+@charset "UTF-8";
+.multiselect {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 34px;
+  color: #333333;
+  text-align: left; }
+  .multiselect, .multiselect__input, .multiselect__single {
+    font-family: inherit;
+    font-size: 14px;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation; }
+  .multiselect--disabled {
+    pointer-events: none; }
+  .multiselect--active {
+    z-index: 50; }
+    .multiselect--active .multiselect__tags {
+      border-color: #7872ff;
+      -webkit-box-shadow: 0 0 0 3px rgba(120, 114, 255, 0.25);
+              box-shadow: 0 0 0 3px rgba(120, 114, 255, 0.25); }
+    .multiselect--active .multiselect__select {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
+
+.multiselect__tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 2px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  min-height: 34px;
+  color: #333333;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+  cursor: pointer;
+  padding-right: 24px;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(0%, rgba(0, 0, 0, 0.03)), to(transparent));
+  background-image: linear-gradient(0, rgba(0, 0, 0, 0.03) 0%, transparent 100%); }
+
+.multiselect__select {
+  position: absolute;
+  display: block;
+  right: 10px;
+  top: 50%;
+  margin-top: -3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #888 transparent transparent transparent; }
+
+.multiselect__single,
+.multiselect__input {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 8px;
+  margin: 2px; }
+
+.multiselect__input {
+  border: 0;
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+.multiselect__placeholder {
+  color: #888888; }
+  .multiselect--active .multiselect__placeholder {
+    display: none; }
+
+.multiselect__tags-wrap {
+   display: inline; 
+  /*display: none;*/
+  max-width: 100%; }
+
+.multiselect__tag {
+  margin: 2px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 12px;
+  line-height: 16px;
+  height: 24px;
+  border-radius: 2px;
+  color: #fff;
+  border: 1px solid #6c67e6;
+  background-color: #7872ff;
+  max-width: 100%;
+  overflow: hidden; }
+  .multiselect__tag span {
+    /*display: block;*/
+    display: none;
+    padding: 3px 6px;
+    line-height: 16px;
+    height: 22px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .multiselect__tag-icon {
+    /*display: block;*/
+    display: none;
+    color: rgba(255, 255, 255, 0.75);
+    border-left: 1px solid #6c67e6;
+    padding: 3px 8px;
+    line-height: 16px;
+    height: 22px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+    cursor: pointer; }
+    .multiselect__tag-icon:after {
+      content: '\D7'; }
+    .multiselect__tag-icon:hover {
+      color: #fff; }
+  .multiselect__tag ~ .multiselect__input,
+  .multiselect__tag ~ .multiselect__single {
+    width: auto; }
+
+.multiselect__content-wrapper {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 100%;
+  max-height: 240px;
+  margin-top: 4px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 50; }
+  .multiselect--above .multiselect__content-wrapper {
+    top: auto;
+    bottom: 100%;
+    margin-top: 0;
+    margin-bottom: 4px; }
+
+.multiselect__content {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 100%; }
+
+.multiselect__element {
+  position: relative; }
+  .multiselect__element:not(:first-child) {
+    border-top: 1px solid #ddd; }
+
+.multiselect__option {
+  position: relative;
+  display: block;
+  color: #555;
+  padding: 8px;
+  font-size: 13px;
+  line-height: 20px;
+  cursor: pointer; }
+  .multiselect__option--highlight {
+    color: #555;
+    background-color: #fafafa; }
+  .multiselect__option--selected::before {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    border-style: solid;
+    border-width: 4px 4px 4px 4px;
+    border-color: #4caf50 #4caf50 transparent transparent; }
+
+.multiselect__spinner {
+  position: absolute;
+  display: block;
+  right: 8px;
+  top: 50%;
+  margin-top: -8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-right-color: transparent;
+  border-top-color: transparent;
+  -webkit-animation: spin-around 500ms infinite linear;
+          animation: spin-around 500ms infinite linear;
+  background-color: #fff; }
+
+.fieldset[disabled] .multiselect {
+  pointer-events: none; }

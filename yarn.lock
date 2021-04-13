@@ -4514,8 +4514,8 @@ isurl@^1.0.0-alpha5:
     is-object "^1.0.1"
 
 jquery@^3.3.1:
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.5.1.tgz#d7b4d08e1bfdb86ad2f1a3d039ea17304717abb5"
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
 
 js-base64@^2.1.8, js-base64@^2.1.9:
   version "2.4.3"
@@ -8060,7 +8060,7 @@ svgo@^1.0.0:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
-tableexport@^5.0.2:
+tableexport@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/tableexport/-/tableexport-5.2.0.tgz#8b0d9738a90b9e3053dd39dbfa4cafe805128f04"
   dependencies:

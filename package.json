@@ -27,7 +27,7 @@
         "moment": "^2.22.1",
         "numeral": "^2.0.6",
         "printd": "^1.0.1",
-        "tableexport": "^5.0.2",
+        "tableexport": "^5.2.0",
         "v-offline": "^1.0.9",
         "vee-validate": "^2.0.8",
         "velocity-react": "^1.4.1",

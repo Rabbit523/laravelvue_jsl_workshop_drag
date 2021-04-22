@@ -32,7 +32,7 @@
         "vee-validate": "^2.0.8",
         "velocity-react": "^1.4.3",
         "velocity-transition-group": "^1.2.2",
-        "vue-axios": "^2.1.1",
+        "vue-axios": "^3.2.4",
         "vue-cleave": "^1.2.2",
         "vue-router": "^3.0.1",
         "vue-scrollto": "^2.11.0",

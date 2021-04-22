@@ -34,7 +34,7 @@
         "velocity-transition-group": "^1.2.2",
         "vue-axios": "^2.1.1",
         "vue-cleave": "^1.2.2",
-        "vue-router": "^3.0.1",
+        "vue-router": "^3.5.1",
         "vue-scrollto": "^2.11.0",
         "vue2-storage": "^3.3.0"
     }

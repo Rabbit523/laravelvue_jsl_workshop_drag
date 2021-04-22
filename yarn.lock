@@ -6891,9 +6891,9 @@ prettier@^1.7.0:
   version "1.12.0"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.12.0.tgz#d26fc5894b9230de97629b39cae225b503724ce8"
 
-printd@^1.4.2:
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/printd/-/printd-1.4.2.tgz#00d9f282ecfc6e65c402a1578ea3bd557e988872"
+printd@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/printd/-/printd-1.5.0.tgz#423a22253c8fb3ddef227985db6bae13bf5a6ed9"
 
 printj@~1.1.0, printj@~1.1.2:
   version "1.1.2"

@@ -29,7 +29,7 @@
         "printd": "^1.4.2",
         "tableexport": "^5.0.2",
         "v-offline": "^1.0.9",
-        "vee-validate": "^2.0.8",
+        "vee-validate": "^3.4.10",
         "velocity-react": "^1.4.3",
         "velocity-transition-group": "^1.2.2",
         "vue-axios": "^2.1.1",
